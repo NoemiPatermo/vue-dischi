@@ -5,6 +5,7 @@
             <div class="title">{{title}}</div>  
             <div class="author">{{author}}</div>
             <div class="year">{{year}}</div>
+            
         </div>
     </div>
 </template>
@@ -51,6 +52,7 @@ export default {
                 font-size: 12px;
                 color: #808080;
             }
+            
         }
         
     }
