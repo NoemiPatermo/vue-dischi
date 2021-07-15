@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Loader v-if="album.length == 0" /> <!--esisterà quando avrà tutti i dati-->
     <Header />
     <Main  :album="album"/> <!--invia al main i dati-->
 
@@ -10,12 +11,13 @@
 import axios from 'axios';  //importiamo axios
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
-
+import Loader from './components/Loader.vue';
 export default {
   name: 'App',
   components: {
     Header,
-    Main         
+    Main,
+    Loader        
   },
   data(){
     return{
