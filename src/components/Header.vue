@@ -5,20 +5,17 @@
         </div>
         
         <div class="box-container">
-            <input type="text" placeholder="  choose"
+          <input type="text" placeholder="  choose"
              v-model="searchMusic"
              @keyup.enter="$emit('choose', searchMusic)"/> <!--viene lanciato l'evento verso il padre con il dato pure (searchmusic)-->
             <button>Choose</button>
         </div>
-                
-        
-        
-    </div>
 </template>
 
 <script>
 export default {
     name: 'Header',
+   
     data (){
         return{
             searchMusic: ''
