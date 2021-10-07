@@ -10,6 +10,7 @@
              @keyup.enter="$emit('choose', searchMusic)"/> <!--viene lanciato l'evento verso il padre con il dato pure (searchmusic)-->
             <button>Choose</button>
         </div>
+    </div>
 </template>
 
 <script>
